@@ -116,7 +116,10 @@ export const AddTask = ({
                         type="button"
                         className="add-task__submit"
                         data-testid="add-task"
-                        onClick={() => addTask()}
+                        onClick={() => {
+                            addTask()
+                            if (showQuickAddTask) setShowQuickAddTask(false);
+                        }}
                     >
                         Add Task
                     </button>

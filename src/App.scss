@@ -122,6 +122,19 @@ $generic-bg: #db4c3f;
         background-color: #282828;
         border-color: transparent;
     }
+    // * {
+    //     color: #fff
+    // }
+
+    // background-color: #282828;
+
+    // .sidebar {
+    //     background-color: #282828;
+    // }
+
+    // .tasks {
+    //     background-color: #282828;
+    // }
 }
 
 //Header
@@ -291,7 +304,7 @@ header {
     }
 
     &__middle {
-        margi-top: 20px;
+        margin-top: 20px;
         margin-bottom: 20px;
         display: flex;
         border-bottom: $generic-border;
@@ -459,8 +472,8 @@ header {
 
         .add-task__main {
             overflow: visible;
-            max-width: 20px;
-            max-width: 55px;
+            margin-bottom: 20px;
+            margin-top: 55px;
             border-radius: 5px;
             background-color: white;
             position: absolute;
@@ -475,7 +488,7 @@ header {
                 float: left;
             }
         }
-        .add-task_cancel {
+        .add-task__cancel-x {
             cursor: pointer;
             color: gray;
             float: right;
@@ -519,7 +532,7 @@ header {
     }
 
     &__submit {
-        @include btn(90px)
+        @include btn('90px')
     }
 }
 
@@ -594,7 +607,7 @@ header {
     }
 
     &__submit {
-        @include btn(100px);
+        @include btn('100px');
     }
 
     &__cancel {
